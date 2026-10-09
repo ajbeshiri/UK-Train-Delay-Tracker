@@ -1,0 +1,151 @@
+.station-table-container {
+    max-height: 400px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.station-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.station-table-container th {
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    z-index: 1;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.station-table-container td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#station-table tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#station-table tbody tr.selected {
+    background-color: #e0f7fa;
+    outline: 1px solid #00acc1;
+}
+
+#stationSearch {
+    background-image: url('searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 200px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#station-details-btn {
+  background-color: #f3f3f3;
+  border: 1px solid;
+  color: rgb(78, 78, 78);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.error-message-txt {
+    color: red;
+    display: none;
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.station-board {
+    width: min(1100px, 100%);
+}
+
+.station-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.station-header h1 {
+    margin-bottom: 5px;
+}
+
+.station-header p {
+    margin: 0;
+    color: #666;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 14px 16px;
+    font-size: 14px;
+}
+
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f8f8f8;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.on-time {
+    color: #16803c;
+}
+
+.delayed {
+    color: #d97706;
+}
+
+.cancelled {
+    color: #c62828;
+}
+
+.early {
+    color: #2563eb;
+}
+
+.reason {
+    margin-top: 4px;
+    max-width: 280px;
+    font-size: 12px;
+    color: #666;
+}

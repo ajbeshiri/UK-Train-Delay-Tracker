@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>UK Train Delay Tracker</title>
+</head>
+<body>
+    <input type="text" id="stationSearch" onkeyup="searchStation()" placeholder="Search for station name...">
+    <p>Choose a station below from the list, or use the search feature above, and press 'Get details' to display train delays/cancellations for that station.</p>
+    <div class="station-table-container" id="station-table-container">
+        <table id="station-table">
+            <thead>
+                <tr>
+                    <th>Station Code</th>
+                    <th>Station Name</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <button id="station-details-btn" onclick="getStationData()">Get details</button>
+    <p class="error-message-txt">An error has occured.</p>
+
+    <div class="page">
+        <main class="station-board">
+            <header class="station-header">
+                <h1 id="station-name"></h1>
+                <p id="updated-time"></p>
+            </header>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operator</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Platform</th>
+                            <th>Scheduled</th>
+                            <th>Actual / Expected</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="services-table"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
